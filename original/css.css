@@ -1,0 +1,202 @@
+.up {
+	background: url('i/up.gif');
+}
+
+.up-right {
+	background: url('i/up-right.gif');
+}
+
+.right {
+	background: url('i/up-right.gif');
+}
+
+.down-right {
+	background: url('i/down-right.gif');
+}
+
+.down {
+	background: url('i/down.gif');
+}
+
+.down-left {
+	background: url('i/down-left.gif');
+}
+
+.left {
+	background: url('i/down-left.gif');
+}
+
+.up-left {
+	background: url('i/up-left.gif');
+}
+
+.stand {
+	background-position: -150 0;
+}
+
+#desu {
+	width: 150;
+	height: 200;
+	position: absolute;
+	z-index: 1;
+	background-repeat: no-repeat;
+}
+
+#bubble {
+	font-size: smaller;
+	opacity: .8;
+	background: url('i/bubble.gif') no-repeat right bottom;
+	float: left;
+	position: absolute;
+	width: 200;
+	height: 200;
+	left: -155px;
+	top: -115px;
+}
+	#bubbletext {
+		background: white;
+		float: right;
+		padding: 5px;
+		margin: 5px;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+
+#log {
+	font-size: 9px;
+	height: 50%;
+	width: 300;
+	overflow: auto;
+}
+
+#area {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+}
+
+#header {
+	position: absolute;
+	top: 345px;
+	left: 70;
+	z-index: 250;
+	font-weight: normal;
+	font-size: 50;
+}
+
+#loader {
+	margin: 20px;
+	float: left;
+	background: white url('i/loading.gif') 15px 8px no-repeat;
+	padding: 8px 30 10 45px;
+	border: 2px solid #aaa;
+}
+
+	#loader img {
+		display: none;
+	}
+
+  
+#desc {
+  border: 2px solid #aaa;
+  background: white;
+  padding: 10px 20px 20px;
+  position: absolute;
+  right: 0;
+  z-index: 1000;
+  margin: 20px;
+  width: 400px;
+  font-size: smaller;
+}
+
+  #desc #close {
+    float: right;
+    color: red;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+.rod {
+	position: absolute;
+	width: 34px;
+	height: 171px;
+	background: url('i/rod.gif') no-repeat;
+}
+
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: tahoma;
+	background: #eee url('i/grid.gif');
+}
+
+
+.obstacle {
+	border: 1px solid red;
+	position: absolute;
+}
+
+.footstep {
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	background: url('i/footsteps.gif') no-repeat -8px -16px;
+  font-size: 0;
+  line-height: 0;
+}
+
+	.fs-up {
+		background-position: -8px 0;
+	}
+
+	.fs-up-right {
+		background-position: -16px 0;
+	}
+
+	.fs-right {
+		background-position: -16px -8px;
+	}
+
+	.fs-down-right {
+		background-position: -16px -16px;
+	}
+
+	.fs-down {
+		background-position: -8px -16px;
+	}
+
+	.fs-down-left {
+		background-position: 0 -16px;
+	}
+
+	.fs-left {
+		background-position: 0 -8px;
+	}
+
+	.fs-up-left {
+		background-position: 0 0;
+	}
+
+#paint {
+	position: absolute;
+	top: 460px;
+	left: 400px;
+	z-index: 325;
+	width: 49px;
+	height: 45px;
+	background: url('i/paint.gif') no-repeat;
+}
+
+#stain {
+	position: absolute;
+	top: 484px;
+	left: 438px;
+	z-index: 306;
+	width: 178px;
+	height: 29px;
+	background: url('i/stain.gif') no-repeat;
+}

@@ -1,0 +1,93 @@
+
+<html>
+
+	<head>
+
+		<title>Офигеть, бродячая Десу!</title>
+
+		<link rel="stylesheet" type="text/css" href="css.css" />
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<script type="text/javascript" src="js.js"></script>
+
+	</head>
+
+	<body>
+
+		<div id="area">
+
+			<div id="desu" style="top: 100px; left: 200px; display: none;" class="down stand">
+				<div id="bubble" style="display:none">
+					<span id="bubbletext">Desu!</span>
+				</div>
+			</div>
+
+			<p id="loader">
+				Пожалуйста, подождите чуть-чуть, пока все картинки (~350kb) загрузятся...
+				<img src="i/grid.gif" alt="preload" onload="loaded()"/>
+				<img src="i/paint.gif" alt="preload" onload="loaded()"/>
+				<img src="i/stain.gif" alt="preload" onload="loaded()"/>
+				<img src="i/footsteps.gif" alt="preload" onload="loaded()"/>
+				<img src="i/up.gif" alt="preload" onload="loaded()"/>
+				<img src="i/up-right.gif" alt="preload" onload="loaded()"/>
+				<img src="i/down-right.gif" alt="preload" onload="loaded()"/>
+				<img src="i/down.gif" alt="preload" onload="loaded()"/>
+				<img src="i/down-left.gif" alt="preload" onload="loaded()"/>
+				<img src="i/up-left.gif" alt="preload" onload="loaded()"/>
+				<img src="i/bubble.gif" alt="preload" onload="loaded()"/>
+				<img src="i/rod.gif" alt="preload" onload="loaded()"/>
+			</p>
+      
+      <div id="desc" style="display: none;">
+        <div id="close" onclick="close_desc();">&times;</div>
+			<p>
+				Амбициозный проект по допиливанию бродячей Десу!
+			</p>
+		</div>
+
+			<div id="log"></div>
+
+			<h1 id="header">Офигеть, бродячая Десу!</h1>
+
+			<div id="paint"></div>
+			<div id="stain"></div>
+
+			<div class="rod" style="top: 262px;left: 704px;z-index: 250;"></div>
+			<div class="rod" style="top: 166px;left: 512px;z-index: 154;"></div>
+			<div class="rod" style="top: 406px;left: 32px;z-index: 394;"></div>
+			<div class="rod" style="top: 262px;left: 801px;z-index: 250;"></div>
+
+		</div>
+
+		<script type="text/javascript">
+
+			document.onkeydown = handleKeydown;
+			document.onkeyup = handleKeyup;
+			var ticker = setInterval("move()", 10);
+			var force_load = setTimeout("show_scene()", 10000);
+			var chatter = setInterval("chatter_on()", 5000);
+
+			/*for (var i = 0; i < obstacles.length; i++) {
+
+				var o = obstacles[i];
+
+				div = document.createElement('div');
+				div.className = 'obstacle';
+				div.style.top = o[1]+'px';
+				div.style.left = o[2]+'px';
+				div.style.width = o[3]+'px';
+				div.style.height = o[4]+'px';
+
+				document.getElementById("log").appendChild(div);
+
+			}*/
+
+		</script>
+
+	
+
+</body>
+
+</html>
+
