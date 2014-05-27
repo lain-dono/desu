@@ -1,0 +1,21 @@
+{
+	"meta": { "image": "desu-sprite.png" },
+	"frames": {
+		"desu/idle-up":         { "frame": {"w": 150, "h": 200, "x": 300, "y": 0} },
+		"desu/idle-up-left":    { "frame": {"w": 150, "h": 200, "x": 0,   "y": 0} },
+		"desu/idle-up-right":   { "frame": {"w": 150, "h": 200, "x": 600, "y": 0} },
+		"desu/idle-down":       { "frame": {"w": 150, "h": 200, "x": 300, "y": 200} },
+		"desu/idle-down-left":  { "frame": {"w": 150, "h": 200, "x": 0,   "y": 200} },
+		"desu/idle-down-right": { "frame": {"w": 150, "h": 200, "x": 600, "y": 200} },
+
+		"desu/walk-up":         { "frame": {"w": 150, "h": 200, "x": 450, "y": 0} },
+		"desu/walk-up-left":    { "frame": {"w": 150, "h": 200, "x": 150, "y": 0} },
+		"desu/walk-up-right":   { "frame": {"w": 150, "h": 200, "x": 750, "y": 0} },
+		"desu/walk-down":       { "frame": {"w": 150, "h": 200, "x": 450, "y": 200} },
+		"desu/walk-down-left":  { "frame": {"w": 150, "h": 200, "x": 150, "y": 200} },
+		"desu/walk-down-right": { "frame": {"w": 150, "h": 200, "x": 750, "y": 200} },
+
+		"desu/blink-down-1":    { "frame": {"w": 150, "h": 200, "x": 600, "y": 400} },
+		"desu/blink-down-2":    { "frame": {"w": 150, "h": 200, "x": 750, "y": 400} }
+	}
+}
