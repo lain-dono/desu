@@ -63,10 +63,6 @@ resizeCanvas();
 		return a.position.y - b.position.y;
 	}
 
-	setInterval(function() {
-		Desunation.children.sort(comparationY)
-	}, 60);
-
 	var Desu = function(states) {
 		PIXI.DisplayObjectContainer.call(this);
 
@@ -282,6 +278,7 @@ function make_desu(states) {
 		requestAnimFrame(animate);
 		particleSystem.render();
 		leafEmitter.update();
+		Desunation.children.sort(comparationY)
 		renderer.render(stage);
 	};
 </script>
